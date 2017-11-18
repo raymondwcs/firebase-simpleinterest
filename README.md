@@ -1,8 +1,8 @@
 COMPS381F - A Google Firebase Web App Example
 
 1. Install NPM dependencies
-..* cd ~/firebase-simpleinterest/functions
-..* npm install
+⋅⋅* cd ~/firebase-simpleinterest/functions
+⋅⋅* npm install
 2. Create an app at console.firebase.google.com
 3. Write down your "Project ID"
 4. Modify the functionUrl variable in public/index.html
