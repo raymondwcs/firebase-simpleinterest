@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://fb.me/react-15.0.0.js"></script>
+    <script src="https://fb.me/react-dom-15.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel">
+      class SimpleInterestForm extends React.Component {
+        constructor(props) {
+          super(props);
+
+          this.state = {
+            principal: 10000,
+            rate: 0.01,
+            time: 10,
+            interest: 0
+          }
+
+          //this.handleChange = this.handleChange.bind(this);
+          this.handleSubmit = this.handleSubmit.bind(this);
+        }
+
+        handleChange(field,event) {
+          //this.setState({value: event.target.value});
+          var change = {};
+          change[field] = event.target.value;
+          //alert(JSON.stringify(change));
+          this.setState(change);
+        }
+
+        handleSubmit(event) {
+          const functionUrl = 'https://us-central1-comps381f-b3ee9.cloudfunctions.net/simpleInterest';
+          const url = functionUrl+'?p='+this.state.principal+'&r='+this.state.rate+'&t='+this.state.time;
+          //alert(url);
+          fetch(url).then(results => results.json()).then(items => this.setState(items));
+        }
+
+        render() {
+          return (
+            <div>
+              <label>
+                Principal:
+                <input type="number" value={this.state.principal} onChange={this.handleChange.bind(this,'principal')} />
+              </label>
+              <br/>
+              <label>
+                Rate:
+                <input type="number" value={this.state.rate} onChange={this.handleChange.bind(this,'rate')} />
+              </label>
+              <br/>
+              <label>
+                Time:
+                <input type="number" value={this.state.time} onChange={this.handleChange.bind(this,'time')} />
+              </label>
+              <br/>
+              <button onClick={this.handleSubmit}>Calc</button>
+              <br/>
+              <label>
+                Interest: {this.state.interest}
+              </label>
+          </div>
+          );
+        }
+      }
+      ReactDOM.render(
+        <SimpleInterestForm />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
