@@ -11,7 +11,7 @@ npm install
 
 If your Project ID is **XXXXXXXX**, `functionUrl` should be changed to:
 ```
-https://us-central1-XXXXXXXX.cloudfunctions.net/simpleInterest
+const functionUrl = https://us-central1-XXXXXXXX.cloudfunctions.net/simpleInterest
 ```
 5. Deploy the updated source code to Google Firebase:
 ```
