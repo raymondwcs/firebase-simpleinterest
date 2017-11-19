@@ -16,7 +16,7 @@ const functionUrl = 'https://us-central1-XXXXXXXX.cloudfunctions.net/simpleInter
 5. Deploy the updated source code to Google Firebase:
 ```
 cd ~/firebase-simpleinterest
-firebase use project-id
+firebase use <project-id>
 firebase deploy
 ```
 6. Open the **Hosting URL** in your web browser
