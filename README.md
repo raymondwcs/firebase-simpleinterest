@@ -7,9 +7,9 @@ npm install
 ```
 2. Create an app at `console.firebase.google.com`
 3. Write down your **Project ID**
-4. Modify the functionUrl variable in `public/index.html`
+4. Modify the `functionUrl` variable in `public/index.html`
 
-If your Project ID is **XXXXXXXX**, functionUrl should be changed to:
+If your Project ID is **XXXXXXXX**, `functionUrl` should be changed to:
 ```
 https://us-central1-XXXXXXXX.cloudfunctions.net/simpleInterest
 ```
@@ -19,4 +19,4 @@ cd ~/firebase-simpleinterest
 firebase use project-id
 firebase deploy
 ```
-6. Open the HOSTING URL in your web browser
+6. Open the **Hosting URL** in your web browser
