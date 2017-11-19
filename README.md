@@ -1,4 +1,4 @@
-COMPS381F - A Google Firebase Web App Example
+#COMPS381F - A Google Firebase Web App Example
 
 1. Install NPM dependencies
 ```
