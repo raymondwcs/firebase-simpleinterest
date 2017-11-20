@@ -1,5 +1,6 @@
 # COMPS381F - A Google Firebase Web App Example
 
+0. Clone this project
 1. Install NPM dependencies
 ```
 cd ~/firebase-simpleinterest/functions
