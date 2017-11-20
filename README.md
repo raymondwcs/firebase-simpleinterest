@@ -6,7 +6,7 @@
 cd ~/firebase-simpleinterest/functions
 npm install
 ```
-2. Create an app at `console.firebase.google.com`
+2. Create an app at `console.firebase.google.com` using your OUHK Google account
 3. Write down your **Project ID**
 4. Modify the `functionUrl` variable in `public/index.html`
 
