@@ -1,7 +1,10 @@
 # COMPS381F - A Google Firebase Web App Example
 
 ## Introduction
-[Firebase] (https://firebase.google.com/) is a mobile and web application development platform developed by Firebase, Inc. in 2011, then acquired by Google in 2014.
+[Firebase](https://firebase.google.com/) is a mobile and web application development platform developed by Firebase, Inc. in 2011, then acquired by Google in 2014.
+
+## Instructions
+Follow the instructons below to deploy a simple **serverless**  Web App that calculates simple interest.  This Web app consists of a React.js front end and a Firebase Cloud function backend.
 
 0. Clone this project
 1. Install NPM dependencies
