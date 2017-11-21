@@ -1,4 +1,4 @@
-# [Reference] COMPS381F - A Google Firebase Web App Example
+# COMPS381F - A Google Firebase Web App Example [Reference]
 
 ## Introduction
 [Firebase](https://firebase.google.com/) is a mobile and web application development platform developed by Firebase, Inc. in 2011, then acquired by Google in 2014.
