@@ -45,10 +45,10 @@
         }
 
         render() {
+          var Panel = ReactBootstrap.Panel;
+
           return (
-            <div className="container-fluid"><div className="row"><div className="col-lg-6">
-              <h1>Simple Interest Calculator</h1>
-              <br/>
+          <Panel header="Simple Interest Calculator">
               <form>
                 <div className="form-group">
                   <label for="p">Principal</label><br/> 
@@ -63,11 +63,11 @@
                   <input type="number" value={this.state.time} onChange={this.handleChange.bind(this,'time')} class="form-control" id="t"/>
                 </div>
                 <div className="form-group">
-                  <label>Interest: {this.state.interest}</label>
+                  <label style={{marginLeft: "0px", marginRight: "10px"}}>Interest:</label><label>{this.state.interest}</label>
                 </div>
                 <button type="button" className="btn btn-primary" onClick={this.handleSubmit}>Calculate</button>
               </form>
-            </div></div></div>
+          </Panel>
           );
         }
       }
