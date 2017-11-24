@@ -6,7 +6,10 @@
 ## Instructions
 Follow the instructons below to deploy a simple **serverless**  Web App that calculates simple interest.  This Web app consists of a React.js front end and a **Firebase Cloud function**.
 
-0. Clone this project
+0. Update the Google Firebase tools to the latest version
+   ```
+   npm install -g firebase-tools
+   ```
 1. Install NPM dependencies
    ```
    cd ~/firebase-simpleinterest/functions
