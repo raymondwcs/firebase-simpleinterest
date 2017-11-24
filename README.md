@@ -26,6 +26,7 @@ Follow the instructons below to deploy a simple **serverless**  Web App that cal
 5. Deploy the updated source code to Google Firebase:
    ```
    cd ~/firebase-simpleinterest
+   firebase login
    firebase use XXXXXXXX-YYYY
    firebase deploy
    ```
