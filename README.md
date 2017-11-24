@@ -26,7 +26,7 @@ Follow the instructons below to deploy a simple **serverless**  Web App that cal
 5. Deploy the updated source code to Google Firebase:
    ```
    cd ~/firebase-simpleinterest
-   firebase use <Project ID>
+   firebase use XXXXXXXX-YYYY
    firebase deploy
    ```
 6. Open the **Hosting URL** in your web browser
