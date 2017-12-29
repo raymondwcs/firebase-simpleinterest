@@ -45,29 +45,42 @@
         }
 
         render() {
-          var Panel = ReactBootstrap.Panel;
-
+          var FormGroup = ReactBootstrap.FormGroup,
+              FormControl = ReactBootstrap.FormControl,
+              ControlLabel = ReactBootstrap.ControlLabel,
+              Jumbotron = ReactBootstrap.Jumbotron,
+              Button = ReactBootstrap.Button;
           return (
-          <Panel header="Simple Interest Calculator" bsStyle="primary">
-              <form>
-                <div className="form-group">
-                  <label for="p">Principal</label><br/> 
-                  <input type="number" value={this.state.principal} onChange={this.handleChange.bind(this,'principal')} class="form-control" id="p"/>
-                </div>
-                <div className="form-group">
-                  <label for="r">Rate</label><br/> 
-                  <input type="number" step="0.01" value={this.state.rate} onChange={this.handleChange.bind(this,'rate')} class="form-control" id="r"/>
-                </div>
-                <div className="form-group">
-                  <label for="t">Time</label><br/> 
-                  <input type="number" value={this.state.time} onChange={this.handleChange.bind(this,'time')} class="form-control" id="t"/>
-                </div>
-                <div className="form-group">
-                  <label style={{marginLeft: "0px", marginRight: "10px"}}>Interest:</label><label>{this.state.interest}</label>
-                </div>
-                <button type="button" className="btn btn-primary" onClick={this.handleSubmit}>Calculate</button>
-              </form>
-          </Panel>
+            <Jumbotron><form>
+              <h1>Simple Interest Calculator</h1><br/>
+              <FormGroup>
+                <ControlLabel>Principal</ControlLabel>
+                <FormControl
+                  type="number"
+                  value={this.state.principal} 
+                  onChange={this.handleChange.bind(this,'principal')} 
+                />
+                <ControlLabel>Interest Rate</ControlLabel>
+                <FormControl
+                  type="number"
+                  step="0.01"
+                  value={this.state.rate} 
+                  onChange={this.handleChange.bind(this,'rate')} 
+                />                
+                <ControlLabel>Time</ControlLabel>
+                <FormControl
+                  type="number"
+                  value={this.state.time} 
+                  onChange={this.handleChange.bind(this,'time')} 
+                />
+                <ControlLabel>Interest</ControlLabel>
+                <FormControl
+                  value={this.state.interest}
+                />
+                <br/>
+                <Button type="button" className="btn btn-primary" onClick={this.handleSubmit}>Calculate</Button>
+              </FormGroup>
+            </form></Jumbotron>
           );
         }
       }
