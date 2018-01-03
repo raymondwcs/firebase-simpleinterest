@@ -9,7 +9,6 @@ Follow the instructons below to deploy a simple **serverless**  Web App that cal
 0. Update the Google Firebase tools to the latest version
    ```
    sudo npm install -g firebase-tools
-   sudo npm install -g firebase-admin
    ```
 1. Install NPM dependencies
    ```
